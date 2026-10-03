@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 16" role="img" aria-label="Linha decorativa azul e coral">
+  <defs>
+    <linearGradient id="g"><stop stop-color="#528BFF" stop-opacity="0"/><stop offset=".35" stop-color="#528BFF"/><stop offset=".65" stop-color="#FF7185"/><stop offset="1" stop-color="#FF7185" stop-opacity="0"/></linearGradient>
+    <style>
+      .pulse{animation:glide 5s ease-in-out infinite alternate;transform-origin:center}
+      @keyframes glide{from{opacity:.35;transform:scaleX(.7)}to{opacity:1;transform:scaleX(1)}}
+      @media (prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.75}}
+    </style>
+  </defs>
+  <rect class="pulse" x="0" y="7" width="1000" height="2" rx="1" fill="url(#g)"/>
+  <circle cx="500" cy="8" r="3" fill="#FF7185"/>
+</svg>
